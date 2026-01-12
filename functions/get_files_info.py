@@ -3,7 +3,6 @@ import os
 
 def get_files_info(working_directory, directory="."):
     try:
-        print(f"directory: {directory}")
         path = os.path.abspath(working_directory)
         target_dir = os.path.normpath(os.path.join(path, directory))
         if not os.path.isdir(target_dir):
