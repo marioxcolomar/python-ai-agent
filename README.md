@@ -1,10 +1,10 @@
 # Python AI Agent
 
-Current implementation uses examples within this codebase but with little adjustments more locals files and directories can be exposed to the agent. Smal improvements to be made when getting an output from the agent to easily follow the steps being taken.
+Current implementation uses examples within this codebase but with little adjustments more locals files and directories can be exposed to the agent. Small improvements to be made when getting an output from the agent to easily follow the steps being taken.
 
 ## Motivation
 
-Dipping my toes in the world of agentic AI and getting hands on using models and flows for achieving results.
+I build this small agentic AI for learning how to work with models and getting into the potential flows for tooling that can help development. The agent has available functions and is able to iterate through results from the first input from the user. The functions help the agent get an overview of the files available that it can read and also write to. Additionally the agent is able to execute python files with optional arguments.
 
 ## Quick Start
 
