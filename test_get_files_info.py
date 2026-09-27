@@ -14,9 +14,14 @@ class TestGetFilesInfo(unittest.TestCase):
         print(pkg)
         self.assertNotIn("Error", pkg)
 
+    def test_get_main_py(self):
+        main_py = get_files_info("calculator", "main.py")
+        print(main_py)
+        self.assertIn("Error", main_py)
+
     def test_outside_directory(self):
-        def base_error(err_path):
-            return f"Error: Cannot list '{err_path}' as it is outside the permitted working directory"
+        def base_error(err_path: str):
+            return f'Error: Cannot list "{err_path}" as it is outside the permitted working directory'
 
         parent = get_files_info("calculator", "../")
         print(parent)
